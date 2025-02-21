@@ -65,7 +65,7 @@ export const DataSourceProvider: ({
                   ? buildClientVersion(
                       song.source.client,
                       song.source.version,
-                      date,
+                      date
                     )
                   : '',
             };

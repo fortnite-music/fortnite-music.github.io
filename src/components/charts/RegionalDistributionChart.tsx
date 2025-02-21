@@ -22,7 +22,7 @@ const RegionalDistributionChart: React.FC<ICommonChartProps> = (props) => {
     return songsInYear.filter((song) => song.source.client?.includes(region))
       .length;
   };
-  const yearlyBR = getYearlyRegionalCount(FortClient.BR);
+  const yearlyBR = getYearlyRegionalCount(FortClient.BattleRoyale);
   const yearlyOverseas = songsInYear.length - yearlyBR;
 
   const options: Highcharts.Options = {
@@ -61,14 +61,38 @@ const RegionalDistributionChart: React.FC<ICommonChartProps> = (props) => {
             colorIndex: cornFlowerBlueIdx,
             y: yearlyBR,
           },
-          { name: 'Save The World', y: getYearlyRegionalCount(FortClient.STW) },
-          { name: 'Creative', y: getYearlyRegionalCount(FortClient.CR) },
-          { name: 'Events', y: getYearlyRegionalCount(FortClient.EVT) },
-          { name: 'Rocket Racing', y: getYearlyRegionalCount(FortClient.RR) },
-          { name: 'LEGO Fortnite', y: getYearlyRegionalCount(FortClient.LEGO) },
-          { name: 'LEGO Brick Life', y: getYearlyRegionalCount(FortClient.BL) },
-          { name: 'Fortnite Festival', y: getYearlyRegionalCount(FortClient.FF) },
-          { name: 'Trailers', y: getYearlyRegionalCount(FortClient.YT) },
+          {
+            name: 'Save The World',
+            y: getYearlyRegionalCount(FortClient.SaveTheWorld),
+          },
+          {
+            name: 'Creative',
+            y: getYearlyRegionalCount(FortClient.Creative),
+          },
+          {
+            name: 'Events',
+            y: getYearlyRegionalCount(FortClient.Events),
+          },
+          {
+            name: 'Rocket Racing',
+            y: getYearlyRegionalCount(FortClient.RocketRacing),
+          },
+          {
+            name: 'LEGO Fortnite',
+            y: getYearlyRegionalCount(FortClient.LegoFortnite),
+          },
+          {
+            name: 'LEGO Brick Life',
+            y: getYearlyRegionalCount(FortClient.LegoBrickLife),
+          },
+          {
+            name: 'Fortnite Festival',
+            y: getYearlyRegionalCount(FortClient.FortniteFestival),
+          },
+          {
+            name: 'Trailers',
+            y: getYearlyRegionalCount(FortClient.Promos),
+          },
         ],
         size: '100%',
         innerSize: '70%',

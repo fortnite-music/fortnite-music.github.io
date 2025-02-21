@@ -14,16 +14,16 @@ const AboutPage: React.FC = () => (
     >
       <h2>About</h2>
       <p>
-		This website archives and catalogs music from every gamemode and version
-		of Fortnite and aims to be the most complete resource of Fortnite music.
-		It will be updated whenever new tracks get added to the game, and any
-		info will be added accordingly.
-		</b>
-		This site was based off of the MapleStory Music DB by SlipySlidy, with
-		the majority of the codebase being based off of theirs, the most similar
-		thing being the website. The database is the most different, as it
-		encompasses Fortnite rather than MapleStory. If you have any questions or
-		concerns, please feel free to contact me at contact@kobacat.com.
+        This website archives and catalogs music from every gamemode and version
+        of Fortnite and aims to be the most complete resource of Fortnite music.
+        It will be updated whenever new tracks get added to the game, and any
+        info will be added accordingly.
+        <br></br>
+        This site was based off of the MapleStory Music DB by SlipySlidy, with
+        the majority of the codebase being based off of theirs, the most similar
+        thing being the website. The database is the most different, as it
+        encompasses Fortnite rather than MapleStory. If you have any questions
+        or concerns, please feel free to contact me at contact@kobacat.com.
       </p>
       <h6>
         <b>Music Playback</b>
@@ -61,7 +61,7 @@ const AboutPage: React.FC = () => (
       </p>
     </div>
     <h2>Source</h2>
-	<p>The following GitHub projects were the basis for this site.</p>
+    <p>The following GitHub projects were the basis for this site.</p>
     <div className="gh-project-entry">
       <GitHubButton
         href="https://github.com/maplestory-music/maplebgm-db"

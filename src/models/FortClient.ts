@@ -7,5 +7,5 @@ export enum FortClient {
   LegoFortnite = 'LEGO',
   LegoBrickLife = 'BL',
   FortniteFestival = 'FF',
-  Trailers = 'YT',
+  Promos = 'YT',
 }

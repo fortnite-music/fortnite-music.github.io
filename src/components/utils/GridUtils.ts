@@ -7,7 +7,7 @@ export const ClientVersionCellStyle = (params: CellClassParams): CellStyle => {
   if (!params.value) return {};
   const color = rgba(cornFlowerBlue, 0.5);
   return {
-    backgroundColor: params.value.startsWith(FortClient.BR)
+    backgroundColor: params.value.startsWith(FortClient.BattleRoyale)
       ? color
       : complement(color),
   };

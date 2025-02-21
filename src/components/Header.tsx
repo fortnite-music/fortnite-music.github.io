@@ -18,7 +18,7 @@ export const Header: React.FC<IHeader> = ({ noText }) => {
             margin-bottom: 10px;
           `}
           id="header-logo"
-          src="assets/pink-bean.png"
+          src="assets/zero-point.png"
           alt="header logo"
         />
       </div>
@@ -26,7 +26,7 @@ export const Header: React.FC<IHeader> = ({ noText }) => {
         <div>
           <p>
             Welcome to the Fortnite Music Archive. This site provides a
-            complete listing of the background music used in Fortnite.
+            ·complete listing of the background music used in Fortnite.
             Collectively, the songs are also known as Fortnite's original
             soundtrack (OST).
           </p>

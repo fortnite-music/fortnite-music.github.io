@@ -91,9 +91,9 @@ const MonthlyFrequencyStackedChart: React.FC = () => {
       type: 'area',
       yAxis: 0,
       visible:
-        client === FortClient.STW ||
-        client === FortClient.BR ||
-        client === FortClient.CR,
+        client === FortClient.SaveTheWorld ||
+        client === FortClient.BattleRoyale ||
+        client === FortClient.Creative,
       data: get(monthlyFreq, client),
     })),
   };

@@ -63,7 +63,7 @@ export const SettingsModal: React.FC<ISettingsModalProps> = ({
                   setHideMinorTracks((prev) => !prev);
                 }}
               />
-                <SettingsModalToggle
+              <SettingsModalToggle
                 id="promoTrack"
                 label="Hide Third Party Tracks"
                 checked={hidePromoTracks}

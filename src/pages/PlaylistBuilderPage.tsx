@@ -105,7 +105,8 @@ const PlaylistBuilderPage: React.FC = () => {
       >
         <h2>Playlist Builder</h2>
         <p>
-          Import and export custom playlists. The JSON structure is based off of the MapleStory Music DB and can be found{' '}
+          Import and export custom playlists. The JSON structure is based off of
+          the MapleStory Music DB and can be found{' '}
           <a
             href="https://github.com/maplestory-music/maplebgm-db/blob/master/playlist/blockbuster/BlackHeaven.jsonc"
             target={'_blank'}
