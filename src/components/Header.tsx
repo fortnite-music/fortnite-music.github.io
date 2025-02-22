@@ -25,10 +25,9 @@ export const Header: React.FC<IHeader> = ({ noText }) => {
       {noText ? null : (
         <div>
           <p>
-            Welcome to the Fortnite Music Archive. This site provides a
-            ·complete listing of the background music used in Fortnite.
-            Collectively, the songs are also known as Fortnite's original
-            soundtrack (OST).
+            Welcome to the Fortnite Music Archive. This site provides a complete
+            listing of the background music used in Fortnite and all of it's
+            modes and events, going all the way back from 2014 to present day.
           </p>
         </div>
       )}
