@@ -38,7 +38,7 @@ export const DataSourceProvider: ({
 
   useEffect(() => {
     fetch(
-      'https://raw.githubusercontent.com/fortnite-music/fortnitebgm-db/bgm.min.json'
+      'https://raw.githubusercontent.com/fortnite-music/fortnitebgm-db/main/bgm.min.json'
     )
       .then((result) => result.json())
       .then((rowData: IMusicRecordJson[]) => {
@@ -77,7 +77,7 @@ export const DataSourceProvider: ({
         setState(rowDataGrid);
       });
     fetch(
-      'https://raw.githubusercontent.com/fortnite-music/fortnitebgm-db/playlist.min.json'
+      'https://raw.githubusercontent.com/fortnite-music/fortnitebgm-db/main/playlist.min.json'
     )
       .then((result) => result.json())
       .then((playlist: IPlaylist[]) => {
