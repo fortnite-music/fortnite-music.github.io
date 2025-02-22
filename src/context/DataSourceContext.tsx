@@ -38,7 +38,7 @@ export const DataSourceProvider: ({
 
   useEffect(() => {
     fetch(
-      'https://raw.githubusercontent.com/fortnite-music/fortnitebgm-db/prod/bgm.min.json'
+      'https://raw.githubusercontent.com/fortnite-music/fortnitebgm-db/bgm.min.json'
     )
       .then((result) => result.json())
       .then((rowData: IMusicRecordJson[]) => {
@@ -77,15 +77,13 @@ export const DataSourceProvider: ({
         setState(rowDataGrid);
       });
     fetch(
-      'https://raw.githubusercontent.com/fortnite-music/fortnitebgm-db/prod/playlist.min.json'
+      'https://raw.githubusercontent.com/fortnite-music/fortnitebgm-db/playlist.min.json'
     )
       .then((result) => result.json())
       .then((playlist: IPlaylist[]) => {
         setPlaylistMap(convertToPlaylistMap(playlist));
       });
-    fetch(
-      'https://raw.githubusercontent.com/fortnite-music/stats/prod/top25.json'
-    )
+    fetch('https://raw.githubusercontent.com/fortnite-music/stats/top25.json')
       .then((result) => result.json())
       .then((response: IHotTrackResponse) => {
         setHotTracks(response.data);
