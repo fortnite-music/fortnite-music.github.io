@@ -25,7 +25,7 @@ const buildClientVersion = (
   version: string,
   date: Date | null
 ) => {
-  return `${client} ${version} ${date}`;
+  return `${client} ${version}`;
 };
 
 export const DataSourceProvider: ({
